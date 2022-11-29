@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        
+        table, th, td {
+  border: 1px solid;
+}
+            table {
+                width: 100%;
+              border-collapse: collapse;
+            }
+            </style>
+    </head>
+    <style>
+       /* The container */
+       .container {
+          display: block;
+          position: relative;
+          padding-left: 25px;
+          margin-bottom: 12px;
+          cursor: pointer;
+          font-size: 22px;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+        
+        /* Hide the browser's default radio button */
+        .container input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+        }
+        
+        /* Create a custom radio button */
+        .checkmark {
+          position: absolute;
+          top: 8px;
+          left: 0;
+          height: 10px;
+          width: 10px;
+          background-color: #eee;
+          border-radius: 50%;
+          border-style: inset;
+        }
+        .checkmark2 {
+          position: absolute;
+          top: 8px;
+          left: 0;
+          height: 10px;
+          width: 10px;
+          background-color: #eee;
+          border-radius: 0%;
+          border-style: inset;
+        }
+        
+        /* On mouse-over, add a grey background color */
+        .container:hover input ~ .checkmark {
+          background-color: #ccc;
+        }
+        /* When the radio button is checked, add a blue background */
+        .container input:checked ~ .checkmark {
+          background-color: #126eb9;
+        }
+        .container:hover input ~ .checkmark2 {
+          background-color: #ccc;
+        }
+        /* When the radio button is checked, add a blue background */
+        .container input:checked ~ .checkmark2 {
+          background-color: #126eb9;
+        }
+        /* Style the indicator (dot/circle) */
+        .container .checkmark:after {
+           top: 9px;
+          left: 9px;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background: white;
+        }
+        
+
+    </style>
+    <body>
+        <h1><b>Market Research Survey</b></h1>
+        <p>Please take a few moments to complete this satisfaction survey.</p>
+        <p><b>What is your age range?</b></p>
+        <select name="age" id="age">
+           
+            <option value="18-24">18-24</option>
+            <option value="24+">24+</option>
+        </select>
+        <p><b>What is your yearly income range?</b></p>
+        <select name="range" id="range">
+            <option value="$0 - $25,000">$0 - $25000</option>
+            <option value="$25,000+">25,000+</option>
+        </select>
+        <p><b>Gender </b></p>
+        
+        <p><label class="container">male
+            <input type="checkbox" >
+            <span class="checkmark"></span>
+            
+          </label>
+          </p>
+          <p>
+          <label class="container">female
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          </p>
+        <p><b>Which of the followwing products have your purchased in the last 2 months. Please check all that apply.</b></p>
+        <p Style="" >
+
+        <label class="container">Product 1
+            <input type="checkbox" >
+            <span class="checkmark2"></span>
+          </label>
+          </p>
+          <p>
+          <label class="container">Product 2
+            <input type="checkbox">
+            <span class="checkmark2"></span>
+            </label>
+            </p>
+           <p>
+          <label class="container">Product 3
+            <input type="checkbox">
+            <span class="checkmark2"></span>
+          </label>
+          </p>
+          <p><b>How often would you use our new product?</b></p>
+          <p><label class="container">daily
+            <input type="checkbox" >
+            <span class="checkmark"></span>
+          </label>
+          </p>
+          <p>
+          
+          <label class="container">Weekly
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          </p>
+          <p>
+          <label class="container">Monthly
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          </p>
+          <form>
+          <p><b>What would you pay for the new product?</b></p> 
+          <textarea row="5" cols="1" name="<p><b>What would you pay for the new product?</b></p>"></textarea><p>.</p><textarea row="5" cols="1" name="<p><b>What would you pay for the new product?</b></p>"></textarea>
+          </form>
+
+          <p>What feature would you like to see in the new product?</p>
+        <div class="col-75">
+          <textarea id="abc" name="abc" placeholder="" style="height:200px; width:800px"></textarea>
+        </div>
+      </div>
+      <br>
+    
+    
+
+          <p>Please rate your lever of agreement with the following statements.</p>
+         
+          <table>
+            <tr style="background-color:darkgray;">
+            <th></th>
+            <th>Strongly Disagree</th>
+            <th>Disagree</th>
+            <th>Agree</th>
+            <th>Strongly Agree</th>
+            </tr>
+            <tr>
+                <td><b>Our products are priced fairy.</b></td>
+                <td>
+                    <label class="container">1
+                        <input type="checkbox" >
+                        <span class="checkmark"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="container">2
+                        <input type="checkbox" >
+                        <span class="checkmark"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="container">3
+                        <input type="checkbox" >
+                        <span class="checkmark"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="container">4
+                        <input type="checkbox" >
+                        <span class="checkmark"></span>
+                    </label>
+                </td>
+            </tr>
+            <tr style="background:darkgray;">
+                <td><p>Our products are high quality.</p></td>
+                <td>
+                    <label class="container">1
+                        <input type="checkbox" >
+                        <span class="checkmark"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="container">2
+                        <input type="checkbox" >
+                        <span class="checkmark"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="container">3
+                        <input type="checkbox" >
+                        <span class="checkmark"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="container">4
+                        <input type="checkbox" >
+                        <span class="checkmark"></span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td><p>
+                    You would recommend our products to a friend or coworker.
+                    </p>
+                </td>
+                <td>
+                    <label class="container">1
+                        <input type="checkbox" >
+                        <span class="checkmark"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="container">2
+                        <input type="checkbox" >
+                        <span class="checkmark"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="container">3
+                        <input type="checkbox" >
+                        <span class="checkmark"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="container">4
+                       <p> <input type="checkbox" >
+                        <span class="checkmark"></span></p>
+                    </label>
+                </td>
+            </tr>
+
+          </table>
+          
+          <input type="submit">
+        
+
+    </body>
+
+</html>
